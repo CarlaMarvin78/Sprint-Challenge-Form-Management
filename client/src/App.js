@@ -2,23 +2,8 @@ import React from 'react';
 import './App.css';
 import { withFormik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from "yup";
+import RegistrationForm from './Components/RegistrationForm';
 
-function RegistrationForm({errors, touched}) {
-  return (
-    <Form>
-      <div>
-        {touched.username && errors.username && <p>{errors.username}</p>}
-        <Field type="text" name="username" placeholder="Username" />
-      </div>
-      <div>
-        {touched.password && errors.password && <p>{errors.password}</p>}
-        <Field type="password" name="password" placeholder="Password" />
-      </div>
-
-      <button>Submit!</button>
-    </Form>
-  );
-}
 const FormikRegistrationForm = withFormik({
 
   mapPropsToValues({ username, password }) {
