@@ -26,14 +26,27 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What are the required parts of class components?
 
+ Component, constructor, and render. First, declare a class component. Next, build a constructor function with some sort of state (ie,this.state)--must call "super" for this to work. Last, be sure to render a UI of some sort to the DOM.
+
 - [ ] Name at least three lifecycle methods?
+
+componentDidMount, componentWillMount, componentDidUpdate
 
 - [ ] Why are forms used so often in web applications and software?
 
+Forms are used quite often because they gather input data from the user. For instance, when a website requires registration
+or a log-in. 
+
 - [ ] What advantages are there by using a forms library like Formik?
+
+Formik and other forms libraries have built-ins that allow you to write cleaner, simpler code.
 
 - [ ] Why do we write tests for our apps?
 
+Tests are an essential part of writing apps. They help to catch bugs and other issues before the app is deployed to
+ users. They also ensure that your code is trustworthy, and act as documentation for the code, among other things.
+
+ 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
